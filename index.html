@@ -12,7 +12,7 @@ setInterval(function(){
     var now = new Date().getTime();
     var distance = countDownDate - now;
 
-    // 각 변수에 일, 시, 분, 초를 등록
+    // 일, 시, 분, 초를 등록
     var d = Math.floor(distance / (1000 * 60 * 60 * 24));
     var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -24,7 +24,7 @@ setInterval(function(){
 </head>
   
 <body>
-<div id="d-day"></div>      
+  <div id="d-day"><strong></strong></div>      
 <a href="https://www.naver.com/" target="_blank"><strong>네이버지롱</strong></a>
 <br />
 <a href="https://www.google.co.kr/" target="_blank"><strong>구글이지롱</strong></a>
