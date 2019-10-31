@@ -3,9 +3,28 @@
 <style type="text/css">
 a { text-decoration:none }
 </style>
+<script>
+  
+//디데이 종료 일자 설정
+var countDownDate = new Date("Dec 25, 2019 00:00:01").getTime();
+  
+setInterval(function(){
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    // 각 변수에 일, 시, 분, 초를 등록
+    var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var s = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    document.getElementById("d-day").innerHTML = "X-Mas : " + d +"일 " + h + "시간 " + m + "분 " + s + "초 남았습니다.";
+});
+</script>  
 </head>
   
 <body>
+<div id="d-day"></div>      
 <a href="https://www.naver.com/" target="_blank"><strong>네이버지롱</strong></a>
 <br />
 <a href="https://www.google.co.kr/" target="_blank"><strong>구글이지롱</strong></a>
