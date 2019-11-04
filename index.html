@@ -6,25 +6,34 @@ a { text-decoration:none }
 <script>
   
 //디데이 종료 일자 설정
-var countDownDate = new Date("Dec 25, 2019 00:00:01").getTime();
+var countDownDateXmas = new Date("Dec 25, 2019 00:00:01").getTime();
+var countDownDateTicket = new Date("Nov 5, 2019 14:00:00").getTime();
   
 setInterval(function(){
     var now = new Date().getTime();
-    var distance = countDownDate - now;
+    var distanceXmas = countDownDateXmas - now;
+    var distanceTicket = countDownDateTicket - now;
 
     // 일, 시, 분, 초를 등록
-    var d = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var s = Math.floor((distance % (1000 * 60)) / 1000);
+    var dX = Math.floor(distanceXmas / (1000 * 60 * 60 * 24));
+    var hX = Math.floor((distanceXmas % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var mX = Math.floor((distanceXmas % (1000 * 60 * 60)) / (1000 * 60));
+    var sX = Math.floor((distanceXmas % (1000 * 60)) / 1000);
   
-    document.getElementById("d-day").innerHTML = "X-Mas : " + d +"일 " + h + "시간 " + m + "분 " + s + "초 남았습니다.";
+    var dT = Math.floor(distanceTicket / (1000 * 60 * 60 * 24));
+    var hT = Math.floor((distanceTicket % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var mT = Math.floor((distanceTicket % (1000 * 60 * 60)) / (1000 * 60));
+    var sT = Math.floor((distanceTicket % (1000 * 60)) / 1000);
+  
+    document.getElementById("d-dayXmas").innerHTML = "X-Mas : " + dX +"일 " + hX + "시간 " + mX + "분 " + sX + "초 남았습니다.";
+    document.getElementById("d-dayTicket").innerHTML = "Buy Ticket : " + dT +"일 " + hT + "시간 " + mT + "분 " + sT + "초 남았습니다.";
 });
 </script>  
 </head>
   
 <body>
-  <div><strong id="d-day"></strong></div> 
+  <div><strong id="d-dayXmas"></strong></div> 
+  <div><strong id="d-dayTicket"></strong></div> 
   <div><img src="woo.jpg" width="330" height="520"></div>
 </body>
 </html>
