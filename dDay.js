@@ -1,12 +1,13 @@
 //디데이 종료 일자 설정
 var countDownDateXmas = new Date("Dec 25, 2019 00:00:01").getTime();
 var countDownDateTicket = new Date("Nov 5, 2019 14:00:00").getTime();
+var countDownDateHome = new Date("Nov 18, 2019 10:00:00").getTime();
   
 setInterval(function(){
     var now = new Date().getTime();
     var distanceXmas = countDownDateXmas - now;
     var distanceTicket = countDownDateTicket - now;
-    var distanceHome = countDownDateTicket - now;
+    var distanceHome = countDownDateHome - now;
 
     // 일, 시, 분, 초를 등록
     var dX = Math.floor(distanceXmas / (1000 * 60 * 60 * 24));
