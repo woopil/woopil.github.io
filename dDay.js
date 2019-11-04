@@ -1,5 +1,3 @@
-<script>
-  
 //디데이 종료 일자 설정
 var countDownDateXmas = new Date("Dec 25, 2019 00:00:01").getTime();
 var countDownDateTicket = new Date("Nov 5, 2019 14:00:00").getTime();
@@ -23,4 +21,4 @@ setInterval(function(){
     document.getElementById("d-dayXmas").innerHTML = "X-Mas : " + dX +"일 " + hX + "시간 " + mX + "분 " + sX + "초 남았습니다.";
     document.getElementById("d-dayTicket").innerHTML = "Buy Ticket : " + dT +"일 " + hT + "시간 " + mT + "분 " + sT + "초 남았습니다.";
 });
-</script>  
+
