@@ -20,10 +20,10 @@ setInterval(function(){
     var mH = Math.floor((distanceHome % (1000 * 60 * 60)) / (1000 * 60));
     var sH = Math.floor((distanceHome % (1000 * 60)) / 1000);
   
-    var dT = Math.floor(distanceHome / (1000 * 60 * 60 * 24));
-    var hT = Math.floor((distanceHome % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var mT = Math.floor((distanceHome % (1000 * 60 * 60)) / (1000 * 60));
-    var sT = Math.floor((distanceHome % (1000 * 60)) / 1000);    
+    var dT = Math.floor(distanceTrans / (1000 * 60 * 60 * 24));
+    var hT = Math.floor((distanceTrans % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var mT = Math.floor((distanceTrans % (1000 * 60 * 60)) / (1000 * 60));
+    var sT = Math.floor((distanceTrans % (1000 * 60)) / 1000);    
   
     document.getElementById("d-dayXmas").innerHTML = "X-Mas : " + dX +"일 " + hX + "시간 " + mX + "분 " + sX + "초 남았습니다.";    
     document.getElementById("d-dayHome").innerHTML = "Home : " + dH +"일 " + hH + "시간 " + mH + "분 " + sH + "초 남았습니다.";
