@@ -1,6 +1,5 @@
 //디데이 종료 일자 설정
 var countDownDateXmas = new Date("Dec 25, 2019 00:00:01").getTime();
-var countDownDateHome = new Date("Nov 18, 2019 10:00:00").getTime();
 var countDownDateTrans = new Date("Mar 31, 2020 00:00:01").getTime();
   
 setInterval(function(){
