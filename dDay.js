@@ -1,9 +1,8 @@
 //디데이 종료 일자 설정
-var countDownDateTrans = new Date("June 31, 2020 00:00:01").getTime();
+var countDownDateTrans = new Date("Mar 31, 2021 00:00:01").getTime();
   
 setInterval(function(){
-    var now = new Date().getTime();
-    var distanceXmas = countDownDateXmas - now;        
+    var now = new Date().getTime(); 
     var distanceTrans = countDownDateTrans - now;
 
     // 일, 시, 분, 초를 등록
