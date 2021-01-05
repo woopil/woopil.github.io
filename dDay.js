@@ -6,10 +6,6 @@ setInterval(function(){
     var distanceTrans = countDownDateTrans - now;
 
     // 일, 시, 분, 초를 등록
-    var dX = Math.floor(distanceXmas / (1000 * 60 * 60 * 24));
-    var hX = Math.floor((distanceXmas % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var mX = Math.floor((distanceXmas % (1000 * 60 * 60)) / (1000 * 60));
-    var sX = Math.floor((distanceXmas % (1000 * 60)) / 1000);
    
     var dT = Math.floor(distanceTrans / (1000 * 60 * 60 * 24));
     var hT = Math.floor((distanceTrans % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
