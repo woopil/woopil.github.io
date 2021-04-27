@@ -1,5 +1,5 @@
 //디데이 종료 일자 설정
-var countDownDateTrans = new Date("June 31, 2021 00:00:01").getTime();
+var countDownDateTrans = new Date("June 31, 2021 18:00:00").getTime();
   
 setInterval(function(){
     var now = new Date().getTime(); 
