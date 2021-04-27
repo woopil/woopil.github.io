@@ -12,6 +12,6 @@ setInterval(function(){
     var mT = Math.floor((distanceTrans % (1000 * 60 * 60)) / (1000 * 60));
     var sT = Math.floor((distanceTrans % (1000 * 60)) / 1000);    
   
-    document.getElementById("d-dayTrans").innerHTML = "Bye : " + dT +"일 " + hT + "시간 " + mT + "분 " + sT + "초 남았습니다.";
+    document.getElementById("d-dayTrans").innerHTML = "추노 : " + dT +"일 " + hT + "시간 " + mT + "분 " + sT + "초 남았습니다.";
 });
 
